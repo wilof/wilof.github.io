@@ -7,11 +7,27 @@
 	<title>Сайт</title>
 	<link rel="stylesheet" href="styles/index.css" />
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>
+
+		$(document).ready(function(){
+    $("#yes").click(function () {
+     $('#banner').css("display","none");
+    });
+  });
+</script>
+
 	
 
 
 </head>
 <body>
+		<div id="banner">
+			<h1>Подтверждение пользовательского созлашения:</h1>
+			<p>Зравствуйте, продтвердите что вы ознакомлены с нашем пользовательским соглашением, нажав на кнопку "Принимаю и продолжить"</p>
+			<a href="#" id="yes">Принимаю и продолжить</a>
+			<a href="https://www.google.ru" class="not">Не принимаю</a>
+		</div>
 		<div class="head">
 			<a href="index.html" class="logo"><b>WILOF</b></a>
 			<a href="http://qwertypay.com/shop?prod=21051" class="button">Купить курс и начать зарабатывать!</a>

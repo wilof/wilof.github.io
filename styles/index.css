@@ -153,3 +153,44 @@ a, a:hover {color: #000; text-decoration: none;}
 .prav {
 	padding-left: 59%;
 }
+
+#banner{
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items:center;
+	align-content:flex-start;
+	margin: 300px 15%;
+	width: 900px;
+	height: 180px;
+	background-color: #007a8a;
+	opacity: 0.98;
+	z-index: 5;
+	border-radius: 4px;
+}
+
+#banner h1{
+	margin-top: 5px;
+	font-size: 25px;
+}
+
+#banner p{
+	padding-left: 25px;
+	margin-top: 7px;
+	font-size: 18px;
+}
+#banner #yes{
+	font-size: 21px;
+	margin-top: 13px;
+	background-color: #3396ff;
+	padding: 8px 17px;
+	border-radius: 20px;
+	opacity: 0.9;
+}
+
+#banner .not{
+	font-size: 13px;
+	margin-top: 13px;
+	opacity: 0.9;
+}
