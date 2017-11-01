@@ -14,12 +14,12 @@ if (!empty($_POST['name']) AND !empty($_POST['email']) AND !empty($_POST['messag
     $letter .="\nТелефон: ".$_POST['phone'];
     $letter .="\nСообщение: ".$_POST['message'];
     
-    if (mail("drugoisvet@gmail.com", $theme, $letter, $headers)){
-      header("Location: /testform/thankyou.php");
+    if (mail("air.pods2017@yandex.ru", $theme, $letter, $headers)){
+      header("Location: thankyou.php");
     } else {
-      header("Location: /testform");
+      header("Location: submit.php");
     }  
               
 } else {
-  header("Location: /testform");
+  header("Location: submit.php");
 }

@@ -291,12 +291,12 @@
                     <span class="new bold">2990р</span><!-- after_qbici -->
                 </div> 
                 <div class="btnHead clearfix" id="zakaz">
-                    <form class="m1-form" action="/testform/submit.php" method="POST" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;"> 
+                    <form class="m1-form" action="submit.php" method="POST" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;"> 
                         <div class="order">Заполнить форму заявки</div>
                         <div><input type="text" name="name" placeholder="Введите Ф.И.О" required=""></div>
                         <div><input type="tel" name="phone" placeholder="Введите телефон" required=""></div>
-                        <input name="email" placeholder="Email">
-                        <textarea name="message" placeholder="Сообщение"></textarea>
+                        <div><input name="email" placeholder="Email"></div>
+                        <div><textarea name="message" placeholder="Сообщение"></textarea></div>
                         <div><button class="button-m" type="submit">Оформить заказ</button></div>
                     </form>
                     <div class="right">Акция продлится<br>до <span class="m1-date"></span></div>

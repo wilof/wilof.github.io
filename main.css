@@ -616,6 +616,22 @@ form.m1-form .button-m{
     }
     
 }
+textarea{
+    outline: none;
+    width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    font-size: 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    border: none;
+    text-decoration: none;
+    border-radius: 35px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 400;
+}
+
 /* bizlife_inc */
 @media only screen and (max-width: 639px) {
         .section {
