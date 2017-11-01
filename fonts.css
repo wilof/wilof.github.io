@@ -1,0 +1,42 @@
+@font-face {
+    font-family:'ProximaNova';
+    src: url('ProximaNovaThin.woff2')/*tpa=http://shopmaybay.ru/airpods/fonts/ProximaNovaThin.woff2*/ format('woff2'),
+		url('ProximaNovaThin.woff')/*tpa=http://shopmaybay.ru/airpods/fonts/ProximaNovaThin.woff*/ format('woff'),
+		url('ProximaNovaThin.otf')/*tpa=http://shopmaybay.ru/airpods/fonts/ProximaNovaThin.otf*/ format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0525;
+}
+.m100 {
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family:'ProximaNova';
+    src: url('ProximaNovaRegular.woff2')/*tpa=http://shopmaybay.ru/airpods/fonts/ProximaNovaRegular.woff2*/ format('woff2'),
+        url('ProximaNovaRegular.woff')/*tpa=http://shopmaybay.ru/airpods/fonts/ProximaNovaRegular.woff*/ format('woff'),
+        url('ProximaNovaRegular.otf')/*tpa=http://shopmaybay.ru/airpods/fonts/ProximaNovaRegular.otf*/ format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0525;
+}
+
+.m500 {
+    font-weight: 400;
+}
+@font-face {
+    font-family:'ProximaNova';
+    src: url('ProximaNovaBold.woff2')/*tpa=http://shopmaybay.ru/airpods/fonts/ProximaNovaBold.woff2*/ format('woff2'),
+		url('ProximaNovaBold.woff')/*tpa=http://shopmaybay.ru/airpods/fonts/ProximaNovaBold.woff*/ format('woff'),
+		url('ProximaNovaBold.otf')/*tpa=http://shopmaybay.ru/airpods/fonts/ProximaNovaBold.otf*/ format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0525;
+}
+.m900 {
+    font-weight: 700;
+}

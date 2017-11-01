@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <title>Airpods беспроводные наушники</title>
+    <meta name="keywords" content="Airpods, беспроводные наушники">
+    
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="fonts.css" type="text/css" />
+    <link rel="stylesheet" href="slick.css" type="text/css" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    
+    <script src="jquery.min.js" tppabs="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="roboto.css" tppabs="http://static.best-gooods.ru/fonts/roboto.css">
+        <script src="jquery.js" tppabs="http://static.best-gooods.ru/js/jquery.js" type="text/javascript"></script>
+        <script src="plugins.js" tppabs="http://static.best-gooods.ru/js/plugins.js" type="text/javascript"></script>
+        
+        <script src="detect.js" tppabs="http://static.best-gooods.ru/js/detect.js" type="text/javascript"></script>
+        
+        <link href="popup-m1-style.css-v=4.css" tppabs="http://static.best-gooods.ru/css/popup-m1-style.css?v=4" rel="stylesheet" type="text/css"/>
+                <script src="popup-m1.js-v=4.js" tppabs="http://static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
+
+                <script type="text/javascript">
+                $(function(){
+                    M1.initComebacker(3000);
+                    var M1Text = {
+                        'validation_name': 'Укажите корректные ФИО.',
+                        'validation_phone1': 'Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы.',
+                        'validation_phone2': 'В вашем телефоне слишком мало цифр.',
+                        'comebacker_text': 'ВНИМАНИЕ'
+                    };
+                    M1.validateAndSendForm(false, M1Text);
+                });
+                </script>
+        
+        <script>
+        var vPlayer = null;
+            $(function() {
+                
+                
+                var product = 4712,
+                    url = location.href,
+                    length = 0,
+                    keyVal = '',
+                    arFio = [],
+                    arPhone = [];
+                        
+                $('input[name=\'phone\']').bind('keyup change', function(){
+                    var form = $(this).parents('form'),
+                        name = form.find('input[name=\'name\']').val(),
+                        phone;
+                    
+                    phone = $(this).val().replace(/\D+/g,'');
+                    if(phone.length >= 8){
+                        getFormData();
+                        $.ajax({
+                          type: 'POST',
+                          url: 'http://m1-shop.ru/send_stat_order/',
+                          data: {
+                            name: name,
+                            phone: phone,
+                            name_json: JSON.stringify(arFio),
+                            phone_json: JSON.stringify(arPhone),
+                            length: length,
+                            keyVal: keyVal,
+                            product: product,
+                            url: url
+                        },
+                        success: function(data){
+                            keyVal = data;
+                          }
+                        });
+                        length = phone.length;
+                    }
+                });
+                
+                $('form').submit(function(){
+                    if(keyVal.length > 0){
+                        $.ajax({
+                            type: 'POST',
+                            url: 'http://m1-shop.ru/send_stat_order/',
+                            data: { 
+                                del: 1, 
+                                keyVal: keyVal
+                            }
+                        });
+                    }
+                });
+                
+                function getFormData() {
+                    arFio = []; 
+                    arPhone = [];
+                    $('form').each(function(){
+                        var phone = $(this).find('input[name=\'phone\']').val();
+                        var fio = $(this).find('input[name=\'name\']').val();
+                        phone = phone.replace(/\D+/g,'');
+                        if (phone.length >= 8){
+                            arPhone.push(phone.toString());
+                            if(typeof fio != 'undefined')
+                                arFio.push(fio.toString());
+                        }
+                    });
+                }
+                
+            });
+        </script><script>
+                function pixel_func() {
+                console.log( 'log' );
+                //document.getElementById('pixel_holder'),innerHTML('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=5.18.235.69&lnk=0&product=4712&sale=phone&is_organic=1&tel=phone&fio=fio&host=shopmaybay.ru/airpods/&useragent=TW96aWxsYS80LjAgKGNvbXBhdGlibGU7IE1TSUUgNy4wOyBXaW5kb3dzIE5UKQ==&user_device=0&showcase_from=0&ua_device=Internet+Explorer&ua_os=Windows&is_backorder=1\'>');
+                $('body').append('<img style=\'display:none;\' src=\'http://m1-shop.ru/pixel?u=1&track=ref%3D8%3B+s%3Dsv%3B+w%3D%3B+t%3D%3B+p%3D%3B+m%3D&landing_id=&prokl_id=&ip=5.18.235.69&lnk=0&product=4712&sale=phone&is_organic=1&tel=phone&fio=fio&host=shopmaybay.ru/airpods/&useragent=TW96aWxsYS80LjAgKGNvbXBhdGlibGU7IE1TSUUgNy4wOyBXaW5kb3dzIE5UKQ==&user_device=0&showcase_from=0&ua_device=Internet+Explorer&ua_os=Windows&is_backorder=1\'>');
+                }
+                setTimeout(pixel_func, 120000);
+                </script><script type="text/javascript">
+            var ref=8;
+            var get=1;
+            var v1=4712;
+            var v2=0;
+            var v3=0;
+            var v4='http://shopmaybay.ru/airpods/5.18.235.69';
+            var v5='Internet Explorer';
+            var v6='Windows';
+            var v7='en';
+            var v8='';
+            var v9='';
+            var v10='';
+            var v11='';
+            var v12='';
+            </script>
+            <script src="vtracker.js" tppabs="http://static.best-gooods.ru/js/vtracker.js" type="text/javascript"></script><!-- after_qbici -->
+</head>
+    <body>
+      
+    <div class="topline">
+        <div class="section">
+            Интернет-магазин «AirPods» 
+            <a href="#zakaz" class="right">Прием заказов <span>24/7</span></a>
+        </div>  
+    </div>
+    <div class="b1">
+        <div class="section clearfix"> 
+            <div class="b1-title">
+                <h1 class="m900">Беспроводные наушники <span>AirPods</span></h1>
+                <h2><span>Со скидкой 53%</span></h2>
+                <p>Никаких проводов. <br>
+Никаких сложностей. <br>
+Чистая магия.</p>
+            </div> 
+            <div class="sale">
+                 <div class="price clearfix">
+                    <span class="old">7350р</span>
+                    <span class="new bold">3990р</span><!-- after_qbici -->
+                </div> 
+                <div class="btnHead clearfix">
+                    <div class="left"><a href="#zakaz" class="button-m">Заказать со скидкой</a></div>
+                    <div class="right">Акция продлится<br>до <span class="m1-date"></span></div>
+                </div>
+            </div>       
+        </div>
+    </div>
+    <div class="b2" id="shop">
+        <div class="section"> 
+            <ul class="sup-1 clearfix">
+                <li>
+                    <p>Мы продаем только сертифицированые товары</p>
+                </li>
+                <li>
+                    <p>Наушники проходят тщательную проверку перед отправкой</p>
+                </li>
+                <li>
+                    <p>Быстрая доставка почтой от 1 до 10 дней</p>
+                </li>
+                <li>
+                    <p>Оплата заказа по факту получения на&nbsp;руки</p>
+                </li>
+            </ul><!-- endzeit_____ -->
+
+        </div>
+    </div>
+    <div class="b2-2">
+        <div class="section"> 
+            <h2 class="title"><span>AirPods</span> &ndash; Чистый звук. Отличная слышимость!</h2>
+            <div class="photo-cont">
+                <img src="b2-img.jpg" tppabs="http://shopmaybay.ru/airpods/img/b2-img.jpg" alt="Airpods">
+            </div>
+            <p>Наушники обеспечивают высококачественное воспроизведение аудио в формате AAC;</p>
+            <p>А чтобы вас лучше слышали, сдвоенные направленные микрофоны уменьшают уровень фоновых шумов во время звонков;</p>
+            <p>Наушники быстро настраиваются и подключаются к любому телефону. Удобная конструкция наушников гаратирует комфорт при ношении;</p>
+        </div>
+    </div>
+
+
+
+    <div class="b4" id="txt">
+        <div class="section"> 
+            <h2 class="title">Как сделать заказ?</h2>
+            <div class="container clearfix">
+                <img src="tov-min.jpg" tppabs="http://shopmaybay.ru/airpods/img/tov-min.jpg" alt="Airpods" title="Airpods">
+                <div class="left-block">
+                    <ul class="deliv clearfix">
+                        <li>
+                            <span>1</span>
+                            <p>
+                                <strong>Вы оставляете заявку</strong>
+                                заполнив форму обратной связи
+                            </p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <p>
+                                <strong>Мы созваниваемся с вами</strong>
+                                для уточнения деталей заказа
+                            </p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <p>
+                                <strong>Отправляем ваш заказ</strong>
+                                в тот же день почтой или курьером
+                            </p>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <p>
+                                <strong>Оплачиваете наушники</strong>
+                                при получении на руки 
+                            </p>
+                        </li>
+                    </ul> 
+                    <a href="#zakaz" class="button-m">Заказать со скидкой</a>  
+                </div>
+            </div>
+        </div>            
+    </div>
+
+    <div class="b6" id="rev">
+        <div class="section"> 
+            <h2 class="title"><span>Отзывы</span> наших покупателей</h2>
+            <div class="rev-slider clearfix">
+                <div class="rev-item">
+                    <img src="rev1.jpg" tppabs="http://shopmaybay.ru/airpods/img/rev1.jpg" alt="отзывы">
+                    <h3>Тимур Валеев</h3>
+                    <p>«Офигенские наушники, хотел их с самого выпуска. Брал сразу 2, для себя и жены. Сейчас оба ходим балдеем, спасибо)»</p>
+                </div>
+                <div class="rev-item">
+                    <img src="rev2.jpg" tppabs="http://shopmaybay.ru/airpods/img/rev2.jpg" alt="отзывы">
+                    <h3>Инна (г. Москва)</h3>
+                    <p>«Почему то из всех беспроводных наушников эти нравятся мне больше всего, наверное из за дизайна)»</p>
+                </div>
+                <div class="rev-item">
+                    <img src="rev3.jpg" tppabs="http://shopmaybay.ru/airpods/img/rev3.jpg" alt="отзывы">
+                    <h3>Артем Пименов</h3>
+                    <p>«Доставили курьером на следующий день после заказа, хожу с ними уже как 2 недели, вам спасибо, будем сотрудничать!»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b1 end-block">
+        <div class="section clearfix">
+            <div class="percent">Действует акция! <span>Cкидка 53%<span></div> 
+            <div class="b1-title">Беспроводные наушники <span>AirPods</span></h1>
+            </div> 
+            <div class="sale">
+                 <div class="price clearfix">
+                    <span class="old">6350р</span>
+                    <span class="new bold">2990р</span><!-- after_qbici -->
+                </div> 
+                <div class="btnHead clearfix" id="zakaz">
+                  <!--   <form class="m1-form" action="http://shopmaybay.ru/airpods/call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;">  -->
+                    <form>
+                        <div class="order">Заполнить форму заявки</div>
+                        <input type="hidden" name="project_name" value="AirPods">
+                        <input type="hidden" name="admin_email" value="air.pods2017@yandex.ru">
+                        <input type="hidden" name="form_subject" value="Form Subject">
+                        
+                            <input type="text" name="Name" placeholder="You name..." required><br>
+                            <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+                            <input type="text" name="Phone" placeholder="You phone..."><br>
+
+                        <div><button class="button-m">Оформить заказ</button></div>
+                    </form>
+                    <div class="right">Акция продлится<br>до <span class="m1-date"></span></div>
+                </div>
+            </div>       
+        </div>
+    </div>
+
+
+    
+
+    <div class="copyr">
+        <p align="center"> 
+            <img class="vis-w"  src="cop1-w-800.png" tppabs="http://best-gooods.ru/lands-img/cop1-w-800.png">
+            <img class="vis-mob"   src="cop1-w-320.png" tppabs="http://best-gooods.ru/lands-img/cop1-w-320.png">
+            <a style="color:inherit;" href="-page=politics.htm" tppabs="http://shopmaybay.ru/airpods/?page=politics" target="_blank">Политика конфиденциальности</a>&nbsp;&nbsp;<a style="color:inherit;" href="-page=agreement.htm" tppabs="http://shopmaybay.ru/airpods/?page=agreement" target="_blank">Пользовательское соглашение</a>
+        </p>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="slick.min.js" tppabs="http://shopmaybay.ru/airpods/js/slick.min.js"></script>
+    <script type="text/javascript" src="scripts.js" tppabs="http://shopmaybay.ru/airpods/js/scripts.js"></script>
+    <script type="text/javascript" src="previewYouTube.js" tppabs="http://static.best-gooods.ru/js/previewYouTube.js"></script>
+
+
+</body>
+</html>
