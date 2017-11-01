@@ -291,18 +291,13 @@
                     <span class="new bold">2990р</span><!-- after_qbici -->
                 </div> 
                 <div class="btnHead clearfix" id="zakaz">
-                  <!--   <form class="m1-form" action="http://shopmaybay.ru/airpods/call.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;">  -->
-                    <form>
+                    <form class="m1-form" action="/testform/submit.php" method="POST" onsubmit="if(this.name.value==''){alert('Введите Ваше имя');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона');return false}return true;"> 
                         <div class="order">Заполнить форму заявки</div>
-                        <input type="hidden" name="project_name" value="AirPods">
-                        <input type="hidden" name="admin_email" value="air.pods2017@yandex.ru">
-                        <input type="hidden" name="form_subject" value="Form Subject">
-
-                            <input type="text" name="Name" placeholder="You name..." required><br>
-                            <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-                            <input type="text" name="Phone" placeholder="You phone..."><br>
-
-                        <div><button class="button-m">Оформить заказ</button></div>
+                        <div><input type="text" name="name" placeholder="Введите Ф.И.О" required=""></div>
+                        <div><input type="tel" name="phone" placeholder="Введите телефон" required=""></div>
+                        <input name="email" placeholder="Email">
+                        <textarea name="message" placeholder="Сообщение"></textarea>
+                        <div><button class="button-m" type="submit">Оформить заказ</button></div>
                     </form>
                     <div class="right">Акция продлится<br>до <span class="m1-date"></span></div>
                 </div>
@@ -328,8 +323,6 @@
     <script type="text/javascript" src="slick.min.js" tppabs="http://shopmaybay.ru/airpods/js/slick.min.js"></script>
     <script type="text/javascript" src="scripts.js" tppabs="http://shopmaybay.ru/airpods/js/scripts.js"></script>
     <script type="text/javascript" src="previewYouTube.js" tppabs="http://static.best-gooods.ru/js/previewYouTube.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="script.js"></script>
 
 
 </body>
